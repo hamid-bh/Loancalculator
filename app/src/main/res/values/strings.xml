@@ -1,3 +1,55 @@
 <resources>
-  <string name="app_name">Loancalculator</string>
+  <!-- Main Menu Button Text -->
+  <string name="app_name">محاسبه گر</string>
+  <string name="btn_loan">محاسبه اقساط وام</string>
+  <string name="btn_deposits">محاسبه سود سپرده بانکی</string>
+  <string name="btn_gold">محاسبه قیمت طلا</string>
+  <string name="btn_estate_buy">محاسبه کمیسیون خرید ملک</string>
+  <string name="btn_estate_rent">محاسبه کمیسیون رهن و اجاره</string>
+
+  <string name="hint_price">تومان</string>
+  <string name="hint_date">ماه</string>
+  <string name="hint_percent">درصد</string>
+  <string name="hint_weight">گرم</string>
+  <string name="about">درباره ما</string>
+  <string name="btn_calculate">محاسبه کن</string>
+  <string name="btn_delete">حذف</string>
+  <string name="resault"> </string>
+
+  <!-- Loan Activity Strings -->
+  <string name="lbl_loan_principal">مبلغ کل وام دریافتی</string>
+  <string name="lbl_duration_month">مدت اقساط</string>
+  <string name="lbl_percent_year">نرخ بهره سالانه</string>
+  <string name="lbl_amount_installment">مبلغ هر قسط:</string>
+  <string name="lbl_annual_interest_year">سود قسط سالانه:</string>
+  <string name="lbl_annual_interest_month">سود قسط ماهانه:</string>
+  <string name="lbl_total_refund">کل بازپرداختی:</string>
+  <string name="lbl_total_interest">بهره کل:</string>
+
+  <!-- Deposit Profit Activity Strings -->
+  <string name="lbl_deposit_profit">مبلغ سپرده گذاری:</string>
+  <string name="lbl_profit_percent">نرخ سود:</string>
+  <string name="lbl_deposit_period">مدت زمان سپرده گذاری:</string>
+  <string name="lbl_total_profit">کل سود سپرده گذاری:</string>
+  <string name="lbl_monthly_profit">متوسط سود ماهانه:</string>
+  <string name="lbl_daily_profit">متوسط سود روزانه:</string>
+
+  <!-- Gold Activity Strings -->
+  <string name="lbl_weight_gold">وزن طلا:</string>
+  <string name="lbl_gold_price">قیمت هر گرم طلا:</string>
+  <string name="lbl_make_price">کارمزد ساخت هر گرم:</string>
+  <string name="lbl_seller_price">درصد سود فروشنده:</string>
+  <string name="lbl_vat_percent">مالیات بر ارزش افزوده:</string>
+  <string name="total_gold_price">قیمت کل طلا:</string>
+  <string name="gram_gold_price">قیمت هر گرم طلا:</string>
+
+  <!-- Estate Activity Strings -->
+  <string name="lbl_chk_full_mortgage">رهن کامل</string>
+  <string name="lbl_mortagage_price">مبلغ رهن:</string>
+  <string name="lbl_rent_price">مبلغ اجاره:</string>
+  <string name="lbl_vat_person">مالیات ارزش افزوده هر یک طرف:</string>
+  <string name="lbl_commission_person">کمیسیون هر یک طرف:</string>
+  <string name="lbl_total_person">مبلغ کل پرداختی هر طرف:</string>
+  <string name="lbl_total_transaction">مبلغ کل معامله:</string>
+
 </resources>
