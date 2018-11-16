@@ -5,7 +5,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/Withe"
+  android:background="@color/mainBackground"
   tools:context=".MainActivity">
 
   <Button
@@ -17,7 +17,7 @@
     android:layout_marginEnd="4dp"
     android:background="@drawable/iconloan"
     android:text="@string/btn_loan"
-    android:textColor="@color/Withe"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toStartOf="@+id/btn_deposit"
     app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
     android:layout_marginEnd="8dp"
     android:background="@drawable/icondeposit"
     android:text="@string/btn_deposits"
-    android:textColor="@color/Withe"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toEndOf="@+id/btn_loan"
@@ -47,7 +47,7 @@
     android:layout_marginEnd="4dp"
     android:background="@drawable/icongold"
     android:text="@string/btn_gold"
-    android:textColor="@color/Withe"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toStartOf="@+id/btn_estate_buy"
     app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toStartOf="parent"
@@ -62,22 +62,25 @@
     android:layout_marginEnd="8dp"
     android:background="@drawable/iconestatebuy"
     android:text="@string/btn_estate_buy"
-    android:textColor="@color/Withe"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toEndOf="@+id/btn_gold"
     app:layout_constraintTop_toBottomOf="@+id/btn_deposit"/>
 
-  <TextView
-    android:id="@+id/version_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+  <Button
+    android:id="@+id/btn_exit"
+    android:layout_width="0dp"
+    android:layout_height="100dp"
     android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
-    android:layout_marginBottom="8dp"
-    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@drawable/iconexit"
+    android:text="@string/btn_exit"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"/>
+    app:layout_constraintStart_toEndOf="@+id/btn_estate_rent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_estate_buy"/>
 
   <Button
     android:id="@+id/btn_estate_rent"
@@ -86,8 +89,31 @@
     android:layout_marginTop="8dp"
     android:background="@drawable/iconestaterent"
     android:text="@string/btn_estate_rent"
-    android:textColor="@color/Withe"
+    android:textColor="@color/mainTextColor"
     app:layout_constraintEnd_toEndOf="@+id/btn_gold"
     app:layout_constraintStart_toStartOf="@+id/btn_gold"
     app:layout_constraintTop_toBottomOf="@+id/btn_gold"/>
+
+  <TextView
+    android:id="@+id/version_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="0dp"
+    android:layout_height="8dp"
+    android:background="@color/colorPrimaryDark"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+  </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

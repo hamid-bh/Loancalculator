@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_gold = findViewById(R.id.btn_gold);
     Button btn_estate_buy = findViewById(R.id.btn_estate_buy);
     Button btn_estate_rent = findViewById(R.id.btn_estate_rent);
+    Button btn_exit = findViewById(R.id.btn_exit);
 
     btn_loan.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
       public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, EstateRentActivity.class);
         startActivity(intent);
+      }
+    });
+    btn_exit.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        finish();
       }
     });
 
