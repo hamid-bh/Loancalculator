@@ -34,7 +34,7 @@ public class DepositProfitActivity extends AppCompatActivity {
 
     //تعریف فیلتر برای محدود کردن اعداد وارد شده توسط کاربر
     percent_year.setFilters(new InputFilter[]{new InputFilterNumber("1", "100")});
-    deposit_period.setFilters(new InputFilter[]{new InputFilterPercent("1", "9999")});
+    deposit_period.setFilters(new InputFilter[]{new InputFilterPercent("1", "99999")});
 
     // اگر می خواهید در جواب محاسبات دو رقم اعشار نیز نشان داده شود از فیلتر زیر استفاده کنید
     // DecimalFormat decimalFormat = new DecimalFormat("#,###" + ".##") for Example: 524,221.11

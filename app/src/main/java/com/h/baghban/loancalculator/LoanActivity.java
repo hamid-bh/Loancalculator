@@ -35,7 +35,7 @@ public class LoanActivity extends AppCompatActivity {
     final TextView totalInterest = findViewById(R.id.totalInterest);
 
     //تعریف فیلتر برای محدود کردن اعداد وارد شده توسط کاربر
-    duration_month.setFilters(new InputFilter[]{new InputFilterNumber("1", "9999")});
+    duration_month.setFilters(new InputFilter[]{new InputFilterNumber("1", "99999")});
     percent_year.setFilters(new InputFilter[]{new InputFilterPercent("1", "100")});
 
     // اگر می خواهید در جواب محاسبات دو رقم اعشار نیز نشان داده شود از فیلتر زیر استفاده کنید
