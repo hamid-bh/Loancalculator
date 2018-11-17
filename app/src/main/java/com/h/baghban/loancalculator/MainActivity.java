@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    Adad.initialize(getApplicationContext());
     super.onCreate(savedInstanceState);
+    Adad.initialize(getApplicationContext());
     setContentView(R.layout.activity_main);
     getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+
     TextView version_name = findViewById(R.id.version_name);
+
     Button btn_loan = findViewById(R.id.btn_loan);
     Button btn_deposit = findViewById(R.id.btn_deposit);
     Button btn_gold = findViewById(R.id.btn_gold);
@@ -34,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
       }
     });
-
     btn_deposit.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     } catch (PackageManager.NameNotFoundException e) {
       e.printStackTrace();
     }
-    int versionNumber = pinfo.versionCode;
+
     version_name.setText("نسخه  " + pinfo.versionName);
   }
 }

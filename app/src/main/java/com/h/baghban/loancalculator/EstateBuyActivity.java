@@ -13,11 +13,14 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
+import ir.adad.client.Adad;
+
 public class EstateBuyActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    Adad.initialize(getApplicationContext());
     setContentView(R.layout.activity_estate_buy);
     getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
