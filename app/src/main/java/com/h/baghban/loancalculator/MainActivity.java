@@ -9,10 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import ir.adad.client.Adad;
+
 public class MainActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    Adad.initialize(getApplicationContext());
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
