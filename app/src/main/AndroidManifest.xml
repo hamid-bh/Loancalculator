@@ -40,6 +40,13 @@
     </activity>
     <activity android:name=".EstateRentActivity">
     </activity>
+    <activity
+      android:name="ir.adad.client.AdadActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+      android:theme="@android:style/Theme.Translucent"/>
+    <meta-data
+      android:name="AdadToken"
+      android:value="78d9d7fafcd4431c9bd4a8a2d5cc54f1" />
   </application>
 
 </manifest>
