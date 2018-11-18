@@ -23,7 +23,7 @@ public final class G {
 
   // تابع محاسبه کمیسیون خرید و فروش ملک
   // کمیسیون هر یک طرف
-  public static double getBuyCommisionPerson(int total_transaction) {
+  public static double getBuyCommisionPerson(double total_transaction) {
     double commision = 0;
     // اگر مبلغ معامله کمتر یا مساوی پانصد میلیون بود کمیسیون نیم درصد حساب می شود
     if (total_transaction <= 500000000) {
@@ -37,12 +37,12 @@ public final class G {
   }
 
   // مالیات ارزش افزوده هر یک طرف
-  public static double getBuyVatPerson(int total_transaction, double vat_percent) {
+  public static double getBuyVatPerson(double total_transaction, double vat_percent) {
     return ((getBuyCommisionPerson(total_transaction) * vat_percent) / 100);
   }
 
   // مبلغ کل پرداختی هر طرف
-  public static double getBuyCommisionTotal(int total_transaction, double vat_percent) {
+  public static double getBuyCommisionTotal(double total_transaction, double vat_percent) {
     return (getBuyCommisionPerson(total_transaction) + vat_percent);
   }
 

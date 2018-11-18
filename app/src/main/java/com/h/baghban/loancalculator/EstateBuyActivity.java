@@ -46,7 +46,7 @@ public class EstateBuyActivity extends AppCompatActivity {
       public void onClick(View v) {
         if (total_transaction.length() > 0 && vat_percent.length() > 0) {
 
-          int totaltransaction = Integer.parseInt(String.valueOf(total_transaction.getText()).replace(",", ""));
+          double totaltransaction = Double.parseDouble(String.valueOf(total_transaction.getText()).replace(",", ""));
           double vatpercent = Double.parseDouble(String.valueOf(vat_percent.getText()));
 
           // محاسبه مبلغ کمیسیون هر یک طرف
