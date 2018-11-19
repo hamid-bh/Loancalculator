@@ -8,103 +8,114 @@
   android:background="@color/mainBackground"
   tools:context=".MainActivity">
 
-  <Button
-    android:id="@+id/btn_loan"
+  <ScrollView
+    android:id="@+id/scrollView2"
     android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="4dp"
-    android:background="@drawable/iconloan"
-    android:text="@string/btn_loan"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toStartOf="@+id/btn_deposit"
-    app:layout_constraintHorizontal_bias="0.5"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/banner_ad_view"
+    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
 
-  <Button
-    android:id="@+id/btn_deposit"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp"
-    android:background="@drawable/icondeposit"
-    android:text="@string/btn_deposits"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toEndOf="@+id/btn_loan"
-    app:layout_constraintTop_toTopOf="parent"/>
+    <android.support.constraint.ConstraintLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/mainBackground"
+      tools:context=".MainActivity">
 
-  <Button
-    android:id="@+id/btn_gold"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="4dp"
-    android:background="@drawable/icongold"
-    android:text="@string/btn_gold"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toStartOf="@+id/btn_estate_buy"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_loan"/>
+      <Button
+        android:id="@+id/btn_loan"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/iconloan"
+        android:text="@string/btn_loan"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/btn_deposit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-  <Button
-    android:id="@+id/btn_estate_buy"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp"
-    android:background="@drawable/iconestatebuy"
-    android:text="@string/btn_estate_buy"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toEndOf="@+id/btn_gold"
-    app:layout_constraintTop_toBottomOf="@+id/btn_deposit"/>
+      <Button
+        android:id="@+id/btn_deposit"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/icondeposit"
+        android:text="@string/btn_deposits"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_loan"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-  <Button
-    android:id="@+id/btn_exit"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp"
-    android:background="@drawable/iconexit"
-    android:text="@string/btn_exit"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@+id/btn_estate_rent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_estate_buy"/>
+      <Button
+        android:id="@+id/btn_gold"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/icongold"
+        android:text="@string/btn_gold"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/btn_estate_buy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loan"/>
 
-  <Button
-    android:id="@+id/btn_estate_rent"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginTop="8dp"
-    android:background="@drawable/iconestaterent"
-    android:text="@string/btn_estate_rent"
-    android:textColor="@color/mainTextColor"
-    app:layout_constraintEnd_toEndOf="@+id/btn_gold"
-    app:layout_constraintStart_toStartOf="@+id/btn_gold"
-    app:layout_constraintTop_toBottomOf="@+id/btn_gold"/>
+      <Button
+        android:id="@+id/btn_estate_buy"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/iconestatebuy"
+        android:text="@string/btn_estate_buy"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_gold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deposit"/>
 
-  <TextView
-    android:id="@+id/version_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginBottom="8dp"
-    app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toStartOf="parent"/>
+      <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/iconexit"
+        android:text="@string/btn_exit"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_estate_rent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_estate_buy"/>
+
+      <Button
+        android:id="@+id/btn_estate_rent"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/iconestaterent"
+        android:text="@string/btn_estate_rent"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/btn_gold"
+        app:layout_constraintStart_toStartOf="@+id/btn_gold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gold"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+  </ScrollView>
 
   <ir.adad.client.Banner
     android:id="@+id/banner_ad_view"
@@ -112,6 +123,16 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintBottom_toTopOf="@+id/version_name"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+    android:id="@+id/version_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="1dp"
