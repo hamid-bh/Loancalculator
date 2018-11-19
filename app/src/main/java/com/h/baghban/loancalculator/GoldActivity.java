@@ -53,8 +53,8 @@ public class GoldActivity extends AppCompatActivity {
           double goldweight = Double.parseDouble(String.valueOf(gold_weight.getText()).replace(",", ""));
           double goldprice = Double.parseDouble(String.valueOf(gold_price.getText()).replace(",", ""));
           double makeprice = Double.parseDouble(String.valueOf(make_price.getText()).replace(",", ""));
-          int sellerpercent = Integer.parseInt(String.valueOf(seller_percent.getText()));
-          int vatpercent = Integer.parseInt(String.valueOf(vat_percent.getText()));
+          double sellerpercent = Double.parseDouble(String.valueOf(seller_percent.getText()));
+          double vatpercent = Double.parseDouble(String.valueOf(vat_percent.getText()));
 
           // محاسبه مبلغ کل طلا
           double totalgoldprice = G.getGoldPrice(goldweight, goldprice, makeprice, sellerpercent, vatpercent);

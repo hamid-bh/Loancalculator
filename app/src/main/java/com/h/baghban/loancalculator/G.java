@@ -15,7 +15,7 @@ public final class G {
   }
 
   // تابع محاسبه قیمت طلای
-  public static double getGoldPrice(double gold_weight, double gold_price, double make_price, int seller_percent, int vat_percent) {
+  public static double getGoldPrice(double gold_weight, double gold_price, double make_price, double seller_percent, double vat_percent) {
     double totalGoldPrice = (gold_price + make_price) * gold_weight;
     double percent = seller_percent + vat_percent;
     return (totalGoldPrice + (totalGoldPrice * percent) / 100);
