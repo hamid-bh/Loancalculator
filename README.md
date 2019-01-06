@@ -1,115 +1,22 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" media="all" integrity="sha512-SofUtoD+o/Z2L/vh4gzFocp1jg1sdICH2RlzSN5BphBONNk1IxuDj0p7RKo0BV1xVQy0dlL5JJH2nq68AT6OAw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-815bad80846128500b79089e54e26457.css" />
-  <link crossorigin="anonymous" media="all" integrity="sha512-EQomF6RXowFMXxaTqDaA+F+1IPGUsSmCJToYi/5Di5o5Zg+r9UDdXjnd52/ERT84HlP+S68pKF7KDI4NwRinmA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-d4daeedab8bfc19bcc62ef39273e2b59.css" />
-  
-  
-  
-  
-  
+  <head>  
 
   <meta name="viewport" content="width=device-width">
   
-  <title>Choose a theme</title>
-    <meta name="description" content="GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over 85 million projects.">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-
-    <meta property="og:url" content="https://github.com">
-    <meta property="og:site_name" content="GitHub">
-    <meta property="og:title" content="Build software better, together">
-    <meta property="og:description" content="GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over 85 million projects.">
-    <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-mark.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="620">
-    <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-octocat.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="620">
-
-
-  <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzU1ODI2MDcxOjgyMGNjZjJlMjMxZTFlZmVjYjQ2NzMyNmI5ZTdmNTcxMDNmMzExYjg0ZDJlNDI3ZjUzM2U4ZWVkMDM1ZjAxZTA=--fc9e5a21de8d9123a5ba235453f21cf4bcd15621">
-  <meta name="pjax-timeout" content="1000">
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="7E16:3F74:EC61D8:1CA2A7D:5C3214BB" data-pjax-transient>
-
-
+  <title>محاسبه گر</title>
   
+    <meta name="description" content="برای بسیاری از مردم این سوال مطرح است که سود سپرده‌های بانکی چگونه محاسبه می شود و یا در ازای وامی که از بانک دریافت می کنند چقدر سود باید پرداخت کنند.
 
-  <meta name="selected-link" value="/hamid-bh/Loancalculator/settings/pages/themes" data-pjax-transient>
+خیلی از مشتریان با نحـــوه محاسبه آشنایی کافی ندارند به همین دلیل ما هم سعی کرده ایم به ساده ترین شکل ممکن برنامه اندرویدی مناسب جهت محاسبه را پیاده سازی کنیم.
 
-      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+دو گزینه دیگر نیز به برنامه اضافه شده است که باز به دلیل عدم اطلاع ناکافی شاید هزینه اضافی در حین معامله مسکن حق کمیسیون املاکی و قیمت واقعی طلا پرداخت شود به راحتی با این برنامه می توانید خودتان حساب و کتاب کنید
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="7E16:3F74:EC61D8:1CA2A7D:5C3214BB" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="30737333" /><meta name="octolytics-actor-login" content="hamid-bh" /><meta name="octolytics-actor-hash" content="4b6459adc8d7909c52d8f7f516add30eef107c41f76debf3f9d79a6f4d58b127" />
-<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/pages/themes" data-pjax-transient="true" />
-
-
-
-    <meta name="google-analytics" content="UA-3769691-2">
-
-  <meta class="js-ga-set" name="userId" content="c80056cc833c17cd17a82d6d43c53254" %>
-
-<meta class="js-ga-set" name="dimension1" content="Logged In">
-
-
-
-  
-
-      <meta name="hostname" content="github.com">
-    <meta name="user-login" content="hamid-bh">
-
-      <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="NmIzNGVlYmE0MzM2MjJiNmM2NzM2MjdhZTk3YjgxNDVjYjI4ZjQ5NjE0NDI5ODNlOTU5NWE1M2RkMTk1ZTFhN3x7InJlbW90ZV9hZGRyZXNzIjoiNS4xMjIuMjU0LjEyNCIsInJlcXVlc3RfaWQiOiI3RTE2OjNGNzQ6RUM2MUQ4OjFDQTJBN0Q6NUMzMjE0QkIiLCJ0aW1lc3RhbXAiOjE1NDY3ODU5ODIsImhvc3QiOiJnaXRodWIuY29tIn0=">
-
-    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT,DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2">
-
-  <meta name="html-safe-nonce" content="b3803359e2ddd673b0e0236f2e1199741643f87c">
-
-  <meta http-equiv="x-pjax-version" content="3eb19ab89d02241706b21f817f6a1862">
-  
-
-
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
-
-<meta name="theme-color" content="#1e2327">
-
-
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+نکته: درصد مالیات ارزش افزوده تا اطلاع ثانوی %9 و درصد فروشنده طلا %7 است که باز برای مطمئن شدن می توانید از فروشنده بپرسید. ">
 
   </head>
 
-  <body class="logged-in env-production">
+  <body>
     
 
   <div class="position-relative js-header-wrapper ">
@@ -117,11 +24,7 @@
     <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
 
     
-    
-    
-
-
-        
+ 
 <header class="Header  f5" role="banner">
   <div class="d-flex flex-justify-between px-3 ">
     <div class="d-flex flex-justify-between ">
