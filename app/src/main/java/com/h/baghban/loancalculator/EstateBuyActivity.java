@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import ir.adad.client.Adad;
 
@@ -97,15 +99,27 @@ public class EstateBuyActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         total_transaction.removeTextChangedListener(this);
-        String s = total_transaction.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          total_transaction.setText(format);
-          total_transaction.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          total_transaction.setText(formattedString);
+          total_transaction.setSelection(total_transaction.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         total_transaction.addTextChangedListener(this);
       }
     });

@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import ir.adad.client.Adad;
 
@@ -127,15 +129,27 @@ public class EstateRentActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         mortagage_price.removeTextChangedListener(this);
-        String s = mortagage_price.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          mortagage_price.setText(format);
-          mortagage_price.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          mortagage_price.setText(formattedString);
+          mortagage_price.setSelection(mortagage_price.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         mortagage_price.addTextChangedListener(this);
       }
     });
@@ -153,15 +167,27 @@ public class EstateRentActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         rent_price.removeTextChangedListener(this);
-        String s = rent_price.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          rent_price.setText(format);
-          rent_price.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          rent_price.setText(formattedString);
+          rent_price.setSelection(rent_price.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         rent_price.addTextChangedListener(this);
       }
     });

@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import ir.adad.client.Adad;
 
@@ -114,15 +116,27 @@ public class LoanActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         loan_principal.removeTextChangedListener(this);
-        String s = loan_principal.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          loan_principal.setText(format);
-          loan_principal.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          loan_principal.setText(formattedString);
+          loan_principal.setSelection(loan_principal.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         loan_principal.addTextChangedListener(this);
       }
     });

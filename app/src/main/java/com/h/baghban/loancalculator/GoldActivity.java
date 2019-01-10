@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import ir.adad.client.Adad;
 
@@ -105,15 +107,27 @@ public class GoldActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         gold_price.removeTextChangedListener(this);
-        String s = gold_price.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          gold_price.setText(format);
-          gold_price.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          gold_price.setText(formattedString);
+          gold_price.setSelection(gold_price.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         gold_price.addTextChangedListener(this);
       }
     });
@@ -131,15 +145,27 @@ public class GoldActivity extends AppCompatActivity {
       @Override
       public void afterTextChanged(Editable editable) {
         make_price.removeTextChangedListener(this);
-        String s = make_price.getText().toString();
-        s = s.replace(",", "");
-        if (s.length() > 0) {
-          DecimalFormat sdd = new DecimalFormat("#,###");
-          Double doubleNumber = Double.parseDouble(s);
-          String format = sdd.format(doubleNumber);
-          make_price.setText(format);
-          make_price.setSelection(format.length());
+
+        try {
+          String originalString = editable.toString();
+
+          Long longval;
+          if (originalString.contains(",")) {
+            originalString = originalString.replaceAll(",", "");
+          }
+          longval = Long.parseLong(originalString);
+
+          DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+          formatter.applyPattern("#,###,###,###");
+          String formattedString = formatter.format(longval);
+
+          //setting text after format to EditText
+          make_price.setText(formattedString);
+          make_price.setSelection(make_price.getText().length());
+        } catch (NumberFormatException nfe) {
+          nfe.printStackTrace();
         }
+
         make_price.addTextChangedListener(this);
       }
     });
