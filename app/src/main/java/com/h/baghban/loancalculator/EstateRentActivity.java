@@ -81,13 +81,13 @@ public class EstateRentActivity extends AppCompatActivity {
           int vatpercent = Integer.parseInt(String.valueOf(vat_percent.getText()));
 
           // کمیسیون هر یک طرف
-          double rentcommisionperson = G.getRentCommisionPerson(mortagageprice, rentprice);
-          String a = decimalFormat.format(rentcommisionperson) + " " + "تومان";
+          double rentvatperson = G.getRentVatPerson(mortagageprice, rentprice, vatpercent);
+          String a = decimalFormat.format(rentvatperson) + " " + "تومان";
           vat_person.setText(a);
 
           // مالیات ارزش افزوده هر یک طرف
-          double rentvatperson = G.getRentVatPerson(mortagageprice, rentprice, vatpercent);
-          String b = decimalFormat.format(rentvatperson) + " " + "تومان";
+          double rentcommisionperson = G.getRentCommisionPerson(mortagageprice, rentprice);
+          String b = decimalFormat.format(rentcommisionperson) + " " + "تومان";
           commission_person.setText(b);
 
           // مبلغ کل پرداختی هر طرف
